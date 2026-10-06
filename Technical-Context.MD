@@ -5,7 +5,7 @@ Engineering-practice contract for code-writing agents in this project. Every imp
 ## Overriding Principles
 1. **Calculation logic is pure and separate from the UI.** Every figure the page displays comes from a side-effect-free, unit-tested TypeScript function with no DOM access, so the maths is verifiable without a browser.
 2. **User inputs never leave the browser.** There is no backend, no storage (including cookies and `localStorage`) and no analytics. Ages, salaries, contributions and pot values are personal data, and the product never holds any.
-3. **No magic numbers.** Every assumption (growth rate, charges, inflation, retirement age and the like) is a named, documented constant, and is shown to the user alongside the result. A projection is only as trustworthy as its visible assumptions.
+3. **No magic numbers.** Every assumption (growth rate, charges, inflation and the like) is a named, documented constant, and is shown to the user alongside the result. A projection is only as trustworthy as its visible assumptions.
 
 ## Frameworks
 - **TypeScript 7.0** — the only application language, for both the calculation module and the page.
