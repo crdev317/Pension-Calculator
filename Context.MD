@@ -53,6 +53,10 @@ _Avoid_: fees, AMC, management charge
 The assumed yearly rise in prices, used to express the **Projected pot** in **Today's money**.
 _Avoid_: CPI, cost of living
 
+**Net growth rate**:
+The yearly rate at which the **Pension pot** grows in **Today's money**: the **Growth rate**, less **Charges**, adjusted for **Inflation**.
+_Avoid_: real return, real growth rate
+
 ### Results
 
 **Projected pot**:
