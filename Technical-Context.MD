@@ -17,7 +17,7 @@ Engineering-practice contract for code-writing agents in this project. Every imp
 
 ## Packages in use
 **Runtime:** none — the shipped bundle has zero runtime dependencies. Number and currency formatting uses the browser's built-in `Intl.NumberFormat`.
-**Build:** `vite`, `typescript`
+**Build:** `vite`, `typescript`, `@types/node`
 **Testing:** `vitest` (unit), `@playwright/test` (end-to-end, Chromium)
 **Code quality:** `eslint`, `typescript-eslint`, `prettier`
 **Charting:** none — results are headline figures only.
@@ -39,7 +39,7 @@ Engineering-practice contract for code-writing agents in this project. Every imp
 - Channel: the page itself. No email, notifications or pop-ups.
 - Validation is inline, next to the field, when the field loses focus. Messages say what to fix (e.g. "Enter an age between 18 and 75"), never only "Invalid input". Errors are announced to assistive technology via `aria-live`, and the page meets WCAG 2.2 AA.
 - Tone: plain UK English, friendly but not chatty. A pension term (e.g. "tax relief") gets a one-line explanation where it first appears.
-- Money is shown in pounds via `Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' })`, rounded to the nearest pound for display. Calculations keep full precision and round only at display.
+- Money is shown in pounds via `Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP', maximumFractionDigits: 0 })`, rounded to the nearest pound for display. Calculations keep full precision and round only at display.
 - Every result is labelled as an estimate, shown with the assumptions that produced it (Principle 3) and a short line stating it is not financial advice.
 
 ## Branching and Environments
