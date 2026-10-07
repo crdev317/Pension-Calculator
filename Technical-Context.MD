@@ -8,7 +8,7 @@ Engineering-practice contract for code-writing agents in this project. Every imp
 3. **No magic numbers.** Every assumption (growth rate, charges, inflation and the like) is a named, documented constant, and is shown to the user alongside the result. A projection is only as trustworthy as its visible assumptions.
 
 ## Frameworks
-- **TypeScript 7.0** — the only application language, for both the calculation module and the page.
+- **TypeScript 6.0** — the only application language, for both the calculation module and the page.
 - **Vite 8.3** — dev server, production build (a static HTML/CSS/JS bundle) and `vite preview`.
 - **No UI framework** — a single HTML page, with TypeScript modules driving the DOM directly.
 
@@ -26,7 +26,7 @@ Engineering-practice contract for code-writing agents in this project. Every imp
 - Policy: **exact-pinned**.
 - Node.js: major version **24 (LTS)**, pinned in `.nvmrc` and the `engines` field of `package.json`.
 - npm packages: exact versions only (`save-exact=true` in `.npmrc`; no `^` or `~` ranges). `package-lock.json` is committed and installs use `npm ci`.
-- Versions current at authoring (2026-10-06): Vite 8.3.3, TypeScript 7.0.2, Vitest 5.0.3, @playwright/test 1.63.0, ESLint 10.12.0, typescript-eslint 8.71.1, Prettier 3.9.9. Once the project is scaffolded, `package-lock.json` is the source of truth, not this list.
+- Versions current at authoring (2026-10-06): Vite 8.3.3, TypeScript 6.0.3, Vitest 5.0.3, @playwright/test 1.63.0, ESLint 10.12.0, typescript-eslint 8.71.1, Prettier 3.9.9. TypeScript is held at 6.0, not the newer 7.0, because typescript-eslint 8.71.1 accepts only TypeScript below 6.1 and `npm install` fails with both (decided 2026-10-07); moving to 7.0 is its own bump PR once typescript-eslint supports it. Once the project is scaffolded, `package-lock.json` is the source of truth, not this list.
 - Bumping: each version bump is its own PR and merges only when the full test suite passes. Dependency-update PRs never auto-merge.
 
 ## Instrumentation
