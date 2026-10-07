@@ -17,7 +17,7 @@ Engineering-practice contract for code-writing agents in this project. Every imp
 
 ## Packages in use
 **Runtime:** none — the shipped bundle has zero runtime dependencies. Number and currency formatting uses the browser's built-in `Intl.NumberFormat`.
-**Build:** `vite`, `typescript`
+**Build:** `vite`, `typescript`, `@types/node`
 **Testing:** `vitest` (unit), `@playwright/test` (end-to-end, Chromium)
 **Code quality:** `eslint`, `typescript-eslint`, `prettier`
 **Charting:** none — results are headline figures only.
