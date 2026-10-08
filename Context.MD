@@ -90,10 +90,10 @@ _Avoid_: real terms, present value
 
 ## Flagged ambiguities
 
-- "Retirement age" was listed as an assumption in `Technical-Context.MD` — resolved: the user enters it, so it is an input, not an **Assumption**.
-- "Pension" on its own could mean a defined contribution pot, a final salary (defined benefit) pension or the State Pension — resolved: the calculator covers only a defined contribution **Pension pot**.
-- "Tax relief" could include higher- or additional-rate relief — resolved: only basic-rate relief, because higher-rate relief is claimed through a tax return and never reaches the **Pension pot**.
-- The result could include tax-free cash or a retirement income — resolved: the calculator shows the **Projected pot** only.
-- A **Contribution** could mean the same cash amount every month — resolved: it stays the same in **Today's money**, rising with **Inflation** in cash terms.
-- A user with several pensions could enter one or all of them — resolved: the **Pension pot** is the total of all their defined contribution pensions.
-- Some people can take money from a pension before 57 (a protected pension age, or reaching 55 before 6 April 2028) — resolved: the calculator uses 57 as the **Minimum pension age** for everyone.
+- "Retirement age" was listed as an assumption in `Technical-Context.MD`. Resolved: the user enters it, so it is an input, not an **Assumption**.
+- "Pension" on its own could mean a defined contribution pot, a final salary (defined benefit) pension or the State Pension. Resolved: the calculator covers only a defined contribution **Pension pot**.
+- "Tax relief" could include higher- or additional-rate relief. Resolved: only basic-rate relief, because higher-rate relief is claimed through a tax return and never reaches the **Pension pot**.
+- The result could include tax-free cash or a retirement income. Resolved: the calculator shows the **Projected pot** only.
+- A **Contribution** could mean the same cash amount every month. Resolved: it stays the same in **Today's money**, rising with **Inflation** in cash terms.
+- A user with several pensions could enter one or all of them. Resolved: the **Pension pot** is the total of all their defined contribution pensions.
+- Some people can take money from a pension before 57 (a protected pension age, or reaching 55 before 6 April 2028). Resolved: the calculator uses 57 as the **Minimum pension age** for everyone.
